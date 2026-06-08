@@ -83,7 +83,7 @@ app.post('/whatsapp', async (req, res) => {
 
   try {
     const aiRes = await ai.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-haiku-4-5-20251001',
       max_tokens: 600,
       system: SYSTEM_PROMPT,
       messages: history
